@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+#ctn{
+    width: 360px;
+    height: 500px;
+    margin: 50px auto 0 auto;
+    background-color: #efefef;
+    overflow: hidden;
+}
+
+.dr-list{
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+.dr-list .dr-item{
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    overflow: hidden;
+
+    transition: transform 300ms ease, opacity 300ms ease;
+}
+.draging{
+    transform: scale(0.9);
+    opacity: 0.75;
+}
+
+.dr-list .dr-item .c-name{
+    margin: 0;
+    line-height: 1.5;
+}
