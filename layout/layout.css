@@ -11,6 +11,7 @@
 }
 
 .dr-list{
+    position: relative;
     margin: 0;
     padding: 10px;
     list-style: none;
@@ -26,9 +27,18 @@
 
     transition: transform 300ms ease, opacity 300ms ease;
 }
-.draging{
-    transform: scale(0.9);
-    opacity: 0.75;
+.dr-list .dr-item.dragging{
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+    background-color: rgba(66, 94, 136, 0.75);
+    color: #fff;
+
+    -webkit-transform: scale(1.03);
+    -webkit-transform-origin: center;    
+}
+.dr-list .dr-item.has-offset{
+    margin-top: 80px;
 }
 
 .dr-list .dr-item .c-name{
