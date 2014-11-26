@@ -12,9 +12,11 @@
 
 .dr-list{
     position: relative;
+    height: 100%;
     margin: 0;
     padding: 10px;
     list-style: none;
+    overflow: auto;
 }
 .dr-list .dr-item{
     height: 60px;
