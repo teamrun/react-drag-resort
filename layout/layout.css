@@ -18,32 +18,48 @@
     list-style: none;
     overflow: auto;
 }
-.dr-list .dr-item{
+.dr-item{
+    position: relative;
     height: 60px;
+    /* 10 + 40 + 10 */
     padding: 10px;
+    padding-left: 60px;
     margin-bottom: 10px;
     background-color: #fff;
     cursor: pointer;
     -webkit-user-select: none;
     overflow: hidden;
+    z-index: 100;
 
     transition: transform 300ms ease, opacity 300ms ease;
 }
-.dr-list .dr-item.dragging{
+.dr-item.dragging{
     position: absolute;
     width: 100%;
     opacity: 0.8;
     background-color: rgba(66, 94, 136, 0.75);
     color: #fff;
+    z-index: 1000;
 
     -webkit-transform: scale(1.03);
     -webkit-transform-origin: center;    
 }
-.dr-list .dr-item.has-offset{
+.dr-item.has-offset{
     margin-top: 80px;
 }
 
-.dr-list .dr-item .c-name{
+.dr-item .c-name{
     margin: 0;
     line-height: 1.5;
+}
+.dr-item .avatar{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 44px;
+    height: 44px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+
+    box-shadow: 0 0px 6px #999;
 }
