@@ -10,6 +10,7 @@
     overflow: hidden;
 }
 
+@pd: 10px;
 .dr-list{
     position: relative;
     height: 100%;
@@ -30,18 +31,19 @@
     -webkit-user-select: none;
     overflow: hidden;
     z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.125);
 
     transition: transform 300ms ease, opacity 300ms ease;
 }
 .dr-item.dragging{
     position: absolute;
-    width: 100%;
-    opacity: 0.8;
-    background-color: rgba(66, 94, 136, 0.75);
-    color: #fff;
+    left: @pd;
+    right: @pd;
+    opacity: 1;
     z-index: 1000;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 
-    -webkit-transform: scale(1.03);
+    -webkit-transform: scale(1.02);
     -webkit-transform-origin: center;    
 }
 .dr-item.has-offset{
