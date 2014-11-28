@@ -5,7 +5,7 @@
 /* line 5, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 #ctn {
   width: 360px;
-  height: 500px;
+  height: 400px;
   margin: 50px auto 0 auto;
   background-color: #efefef;
   overflow: hidden;
@@ -43,7 +43,7 @@
   opacity: 1;
   z-index: 1000;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-  -webkit-transform: scale(1.02);
+  -webkit-transform: scale(1.04);
   -webkit-transform-origin: center;
 }
 /* line 49, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
