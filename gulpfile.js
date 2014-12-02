@@ -4,6 +4,8 @@ var gutil = require('gulp-util');
 var plumber = require('gulp-plumber');
 var liveReload = require('gulp-livereload');
 var rename = require('gulp-rename');
+var cond = require('gulp-cond');
+var uglify = require('gulp-uglify');
 
 var less = require('gulp-less');
 
@@ -46,6 +48,7 @@ gulp.task('react', function(){
             transform: [reactify, envify],
             debug: !proEnv
         }))
+        .pipe( cond(proEnv, uglify()) )
         .pipe(rename('bundle.js'))
         .pipe(gulp.dest('./lib'));
 });

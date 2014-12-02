@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/teamrun/react-drag-resort",
   "dependencies": {
+    "react": "^0.12.1"
+  },
+  "devDependencies": {
+    "gulp-cond": "0.0.2",
+    "gulp-uglify": "^1.0.1",
     "envify": "^3.0.0",
     "gulp": "^3.8.10",
     "gulp-browserify": "^0.5.0",
