@@ -75,18 +75,19 @@ body {
   margin-top: 80px;
 }
 /* line 77, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
-.dr-item.abdicator .has-offset-top {
+.dr-item.abdicator.has-offset-top {
   margin-top: 80px;
 }
 /* line 80, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
-.dr-item.abdicator .has-offset-bottom {
+.dr-item.abdicator.has-offset-bottom {
+  margin-top: 10px;
   margin-bottom: 80px;
 }
-/* line 85, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 86, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item .c-name {
   margin: 0;
 }
-/* line 88, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 89, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item .avatar {
   position: absolute;
   left: 8px;
