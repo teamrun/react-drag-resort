@@ -21,7 +21,7 @@
 }
 /* line 23, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-list.ani .dr-item {
-  transition: all 150ms linear;
+  transition: all 120ms linear;
 }
 /* line 25, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-list.ani .dr-item.dragging {
