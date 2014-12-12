@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+body{
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Avenir" "Avenir next" "Microsoft Yahei";
+}
 
 #ctn{
     width: 360px;
@@ -34,13 +40,16 @@
         }
     }
 }
+
+@dis: 10px;
+@itemH: 60px;
 .dr-item{
     position: relative;
     height: 60px;
     /* 10 + 40 + 10 */
     padding: 10px;
     padding-left: 60px;
-    margin: 10px 0;
+    margin: @dis 0;
     background-color: #fff;
     cursor: pointer;
     -webkit-user-select: none;
@@ -62,13 +71,19 @@
     -webkit-transform: scale(1.04);
     -webkit-transform-origin: center;    
 }
-.dr-item.has-offset{
-    margin-top: 80px;
+.dr-item.abdicator{
+    margin-top: @dis*2 + @itemH;
+
+    .has-offset-top{
+        margin-top: @dis*2 + @itemH;
+    }
+    .has-offset-bottom{
+        margin-bottom: @dis*2 + @itemH;
+    }
 }
 
 .dr-item .c-name{
     margin: 0;
-    line-height: 1.5;
 }
 .dr-item .avatar{
     position: absolute;

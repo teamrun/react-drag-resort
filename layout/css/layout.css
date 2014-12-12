@@ -2,7 +2,14 @@
 * {
   box-sizing: border-box;
 }
-/* line 5, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 4, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+body {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Avenir" "Avenir next" "Microsoft Yahei";
+}
+/* line 11, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 #ctn {
   width: 360px;
   height: 400px;
@@ -10,7 +17,7 @@
   background-color: #efefef;
   overflow: hidden;
 }
-/* line 14, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 20, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-list {
   position: relative;
   height: 100%;
@@ -19,23 +26,23 @@
   list-style: none;
   overflow: auto;
 }
-/* line 23, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 29, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-list.ani .dr-item {
   transition: all 120ms linear;
 }
-/* line 25, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 31, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-list.ani .dr-item.dragging {
   transition: transform 300ms ease;
 }
-/* line 30, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 36, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-list .dr-item {
   transition: all 0ms linear;
 }
-/* line 32, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 38, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-list .dr-item.dragging {
   transition: transform 300ms ease;
 }
-/* line 37, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 46, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item {
   position: relative;
   height: 60px;
@@ -51,7 +58,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
   transition: transform 300ms ease;
 }
-/* line 53, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 62, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item.dragging {
   position: absolute;
   left: 10px;
@@ -63,16 +70,23 @@
   -webkit-transform: scale(1.04);
   -webkit-transform-origin: center;
 }
-/* line 65, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
-.dr-item.has-offset {
+/* line 74, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+.dr-item.abdicator {
   margin-top: 80px;
 }
-/* line 69, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 77, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+.dr-item.abdicator .has-offset-top {
+  margin-top: 80px;
+}
+/* line 80, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+.dr-item.abdicator .has-offset-bottom {
+  margin-bottom: 80px;
+}
+/* line 85, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item .c-name {
   margin: 0;
-  line-height: 1.5;
 }
-/* line 73, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 88, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item .avatar {
   position: absolute;
   left: 8px;
