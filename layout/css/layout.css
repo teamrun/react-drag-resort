@@ -56,22 +56,23 @@
   position: absolute;
   left: 10px;
   right: 10px;
+  margin: 0;
   opacity: 1;
   z-index: 1000;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   -webkit-transform: scale(1.04);
   -webkit-transform-origin: center;
 }
-/* line 64, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 65, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item.has-offset {
   margin-top: 80px;
 }
-/* line 68, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 69, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item .c-name {
   margin: 0;
   line-height: 1.5;
 }
-/* line 72, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
+/* line 73, /Users/chenllos/Documents/dev/ReactFlux/drag-resort/layout/less/layout.less */
 .dr-item .avatar {
   position: absolute;
   left: 8px;
