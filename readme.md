@@ -4,7 +4,7 @@
 
 non-reuseable, for now.
 
-Implementation detail, [see here](./blob/master/doc/实现.md)
+Implementation detail, [see here](https://github.com/teamrun/react-drag-resort/blob/master/doc%2F%E5%AE%9E%E7%8E%B0.md)
 
 how to dev: 
     
